@@ -1,4 +1,4 @@
-# 华东某精工制造业经营管理智能体
+# 离散制造业企业经营管理智能体
 
 [![CI](https://github.com/shu253/manufacturing-operations-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/shu253/manufacturing-operations-copilot/actions/workflows/ci.yml)
 
