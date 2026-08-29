@@ -1,0 +1,1126 @@
+{
+  "dataset_name": "华东某精工装备有限公司",
+  "seed": 20260805,
+  "as_of_date": "2026-08-05",
+  "fixed_story": {
+    "sales_order_code": "销售-20260718-01",
+    "product_code": "产品-001",
+    "material_code": "物料-0001",
+    "purchase_order_code": "采购-20260703-01",
+    "promised_delivery_date": "2026-08-08",
+    "production_progress_rate": 68.0,
+    "purchase_expected_delivery_date": "2026-08-13",
+    "simulation_change_rate": 0.08,
+    "simulation_cost_increase": 19552.49,
+    "simulation_new_margin_rate": 0.1453
+  },
+  "risk_events": [
+    {
+      "risk_code": "风险-000001",
+      "order_code": "销售-20260718-01",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "关键物料电解铜板（物料-0001）短缺1652.238kg",
+      "evidence_record": "32842"
+    },
+    {
+      "risk_code": "风险-000002",
+      "order_code": "销售-20260718-01",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "高",
+      "expected_cause": "采购单采购-20260703-01预计晚于订单需求日期5天以上",
+      "evidence_record": "采购-20260703-01"
+    },
+    {
+      "risk_code": "风险-000003",
+      "order_code": "销售-20260718-01",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "高",
+      "expected_cause": "生产完成率68%，低于计划进度",
+      "evidence_record": "生产-002000"
+    },
+    {
+      "risk_code": "风险-000004",
+      "order_code": "销售-001980",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1980"
+    },
+    {
+      "risk_code": "风险-000005",
+      "order_code": "销售-001914",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1914"
+    },
+    {
+      "risk_code": "风险-000006",
+      "order_code": "销售-001892",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1892"
+    },
+    {
+      "risk_code": "风险-000007",
+      "order_code": "销售-001719",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1719"
+    },
+    {
+      "risk_code": "风险-000008",
+      "order_code": "销售-001821",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1821"
+    },
+    {
+      "risk_code": "风险-000009",
+      "order_code": "销售-001860",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1860"
+    },
+    {
+      "risk_code": "风险-000010",
+      "order_code": "销售-001920",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1920"
+    },
+    {
+      "risk_code": "风险-000011",
+      "order_code": "销售-001834",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1834"
+    },
+    {
+      "risk_code": "风险-000012",
+      "order_code": "销售-001924",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1924"
+    },
+    {
+      "risk_code": "风险-000013",
+      "order_code": "销售-001890",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1890"
+    },
+    {
+      "risk_code": "风险-000014",
+      "order_code": "销售-001839",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1839"
+    },
+    {
+      "risk_code": "风险-000015",
+      "order_code": "销售-001794",
+      "rule_code": "QUALITY_REWORK",
+      "expected_score": 15,
+      "expected_severity": "中",
+      "expected_cause": "质量返工影响计划",
+      "evidence_record": "AUTO-1794"
+    },
+    {
+      "risk_code": "风险-000016",
+      "order_code": "销售-001792",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1792"
+    },
+    {
+      "risk_code": "风险-000017",
+      "order_code": "销售-001831",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1831"
+    },
+    {
+      "risk_code": "风险-000018",
+      "order_code": "销售-001887",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1887"
+    },
+    {
+      "risk_code": "风险-000019",
+      "order_code": "销售-001937",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1937"
+    },
+    {
+      "risk_code": "风险-000020",
+      "order_code": "销售-001963",
+      "rule_code": "QUALITY_REWORK",
+      "expected_score": 15,
+      "expected_severity": "中",
+      "expected_cause": "质量返工影响计划",
+      "evidence_record": "AUTO-1963"
+    },
+    {
+      "risk_code": "风险-000021",
+      "order_code": "销售-001811",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1811"
+    },
+    {
+      "risk_code": "风险-000022",
+      "order_code": "销售-001904",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1904"
+    },
+    {
+      "risk_code": "风险-000023",
+      "order_code": "销售-001850",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1850"
+    },
+    {
+      "risk_code": "风险-000024",
+      "order_code": "销售-001859",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1859"
+    },
+    {
+      "risk_code": "风险-000025",
+      "order_code": "销售-001744",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1744"
+    },
+    {
+      "risk_code": "风险-000026",
+      "order_code": "销售-001982",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1982"
+    },
+    {
+      "risk_code": "风险-000027",
+      "order_code": "销售-001856",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1856"
+    },
+    {
+      "risk_code": "风险-000028",
+      "order_code": "销售-001899",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1899"
+    },
+    {
+      "risk_code": "风险-000029",
+      "order_code": "销售-001730",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1730"
+    },
+    {
+      "risk_code": "风险-000030",
+      "order_code": "销售-001900",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1900"
+    },
+    {
+      "risk_code": "风险-000031",
+      "order_code": "销售-001735",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1735"
+    },
+    {
+      "risk_code": "风险-000032",
+      "order_code": "销售-001977",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1977"
+    },
+    {
+      "risk_code": "风险-000033",
+      "order_code": "销售-001956",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1956"
+    },
+    {
+      "risk_code": "风险-000034",
+      "order_code": "销售-001778",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1778"
+    },
+    {
+      "risk_code": "风险-000035",
+      "order_code": "销售-001848",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1848"
+    },
+    {
+      "risk_code": "风险-000036",
+      "order_code": "销售-001779",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1779"
+    },
+    {
+      "risk_code": "风险-000037",
+      "order_code": "销售-001916",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1916"
+    },
+    {
+      "risk_code": "风险-000038",
+      "order_code": "销售-001745",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1745"
+    },
+    {
+      "risk_code": "风险-000039",
+      "order_code": "销售-001911",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1911"
+    },
+    {
+      "risk_code": "风险-000040",
+      "order_code": "销售-001828",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1828"
+    },
+    {
+      "risk_code": "风险-000041",
+      "order_code": "销售-001910",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1910"
+    },
+    {
+      "risk_code": "风险-000042",
+      "order_code": "销售-001877",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1877"
+    },
+    {
+      "risk_code": "风险-000043",
+      "order_code": "销售-001754",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1754"
+    },
+    {
+      "risk_code": "风险-000044",
+      "order_code": "销售-001954",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1954"
+    },
+    {
+      "risk_code": "风险-000045",
+      "order_code": "销售-001940",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1940"
+    },
+    {
+      "risk_code": "风险-000046",
+      "order_code": "销售-001981",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1981"
+    },
+    {
+      "risk_code": "风险-000047",
+      "order_code": "销售-001948",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1948"
+    },
+    {
+      "risk_code": "风险-000048",
+      "order_code": "销售-001768",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1768"
+    },
+    {
+      "risk_code": "风险-000049",
+      "order_code": "销售-001889",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1889"
+    },
+    {
+      "risk_code": "风险-000050",
+      "order_code": "销售-001865",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1865"
+    },
+    {
+      "risk_code": "风险-000051",
+      "order_code": "销售-001869",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1869"
+    },
+    {
+      "risk_code": "风险-000052",
+      "order_code": "销售-001854",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1854"
+    },
+    {
+      "risk_code": "风险-000053",
+      "order_code": "销售-001805",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1805"
+    },
+    {
+      "risk_code": "风险-000054",
+      "order_code": "销售-001861",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1861"
+    },
+    {
+      "risk_code": "风险-000055",
+      "order_code": "销售-001972",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1972"
+    },
+    {
+      "risk_code": "风险-000056",
+      "order_code": "销售-001749",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1749"
+    },
+    {
+      "risk_code": "风险-000057",
+      "order_code": "销售-001949",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1949"
+    },
+    {
+      "risk_code": "风险-000058",
+      "order_code": "销售-001898",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1898"
+    },
+    {
+      "risk_code": "风险-000059",
+      "order_code": "销售-001820",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1820"
+    },
+    {
+      "risk_code": "风险-000060",
+      "order_code": "销售-001993",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1993"
+    },
+    {
+      "risk_code": "风险-000061",
+      "order_code": "销售-001874",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1874"
+    },
+    {
+      "risk_code": "风险-000062",
+      "order_code": "销售-001852",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1852"
+    },
+    {
+      "risk_code": "风险-000063",
+      "order_code": "销售-001894",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1894"
+    },
+    {
+      "risk_code": "风险-000064",
+      "order_code": "销售-001700",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1700"
+    },
+    {
+      "risk_code": "风险-000065",
+      "order_code": "销售-001872",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1872"
+    },
+    {
+      "risk_code": "风险-000066",
+      "order_code": "销售-001918",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1918"
+    },
+    {
+      "risk_code": "风险-000067",
+      "order_code": "销售-001791",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1791"
+    },
+    {
+      "risk_code": "风险-000068",
+      "order_code": "销售-001830",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1830"
+    },
+    {
+      "risk_code": "风险-000069",
+      "order_code": "销售-001901",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1901"
+    },
+    {
+      "risk_code": "风险-000070",
+      "order_code": "销售-001841",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1841"
+    },
+    {
+      "risk_code": "风险-000071",
+      "order_code": "销售-001812",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1812"
+    },
+    {
+      "risk_code": "风险-000072",
+      "order_code": "销售-001855",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1855"
+    },
+    {
+      "risk_code": "风险-000073",
+      "order_code": "销售-001960",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1960"
+    },
+    {
+      "risk_code": "风险-000074",
+      "order_code": "销售-001938",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1938"
+    },
+    {
+      "risk_code": "风险-000075",
+      "order_code": "销售-001847",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1847"
+    },
+    {
+      "risk_code": "风险-000076",
+      "order_code": "销售-001897",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1897"
+    },
+    {
+      "risk_code": "风险-000077",
+      "order_code": "销售-001942",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1942"
+    },
+    {
+      "risk_code": "风险-000078",
+      "order_code": "销售-001863",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1863"
+    },
+    {
+      "risk_code": "风险-000079",
+      "order_code": "销售-001922",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1922"
+    },
+    {
+      "risk_code": "风险-000080",
+      "order_code": "销售-001955",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1955"
+    },
+    {
+      "risk_code": "风险-000081",
+      "order_code": "销售-001752",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1752"
+    },
+    {
+      "risk_code": "风险-000082",
+      "order_code": "销售-001926",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1926"
+    },
+    {
+      "risk_code": "风险-000083",
+      "order_code": "销售-001984",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1984"
+    },
+    {
+      "risk_code": "风险-000084",
+      "order_code": "销售-001882",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1882"
+    },
+    {
+      "risk_code": "风险-000085",
+      "order_code": "销售-001708",
+      "rule_code": "QUALITY_REWORK",
+      "expected_score": 15,
+      "expected_severity": "中",
+      "expected_cause": "质量返工影响计划",
+      "evidence_record": "AUTO-1708"
+    },
+    {
+      "risk_code": "风险-000086",
+      "order_code": "销售-001697",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1697"
+    },
+    {
+      "risk_code": "风险-000087",
+      "order_code": "销售-001969",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1969"
+    },
+    {
+      "risk_code": "风险-000088",
+      "order_code": "销售-001815",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1815"
+    },
+    {
+      "risk_code": "风险-000089",
+      "order_code": "销售-001853",
+      "rule_code": "QUALITY_REWORK",
+      "expected_score": 15,
+      "expected_severity": "中",
+      "expected_cause": "质量返工影响计划",
+      "evidence_record": "AUTO-1853"
+    },
+    {
+      "risk_code": "风险-000090",
+      "order_code": "销售-001933",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1933"
+    },
+    {
+      "risk_code": "风险-000091",
+      "order_code": "销售-001912",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1912"
+    },
+    {
+      "risk_code": "风险-000092",
+      "order_code": "销售-001883",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1883"
+    },
+    {
+      "risk_code": "风险-000093",
+      "order_code": "销售-001881",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1881"
+    },
+    {
+      "risk_code": "风险-000094",
+      "order_code": "销售-001919",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1919"
+    },
+    {
+      "risk_code": "风险-000095",
+      "order_code": "销售-001978",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1978"
+    },
+    {
+      "risk_code": "风险-000096",
+      "order_code": "销售-001931",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1931"
+    },
+    {
+      "risk_code": "风险-000097",
+      "order_code": "销售-001701",
+      "rule_code": "QUALITY_REWORK",
+      "expected_score": 15,
+      "expected_severity": "中",
+      "expected_cause": "质量返工影响计划",
+      "evidence_record": "AUTO-1701"
+    },
+    {
+      "risk_code": "风险-000098",
+      "order_code": "销售-001810",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1810"
+    },
+    {
+      "risk_code": "风险-000099",
+      "order_code": "销售-001849",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1849"
+    },
+    {
+      "risk_code": "风险-000100",
+      "order_code": "销售-001923",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1923"
+    },
+    {
+      "risk_code": "风险-000101",
+      "order_code": "销售-001806",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1806"
+    },
+    {
+      "risk_code": "风险-000102",
+      "order_code": "销售-001939",
+      "rule_code": "PRODUCTION_DELAY",
+      "expected_score": 20,
+      "expected_severity": "中",
+      "expected_cause": "生产进度低于计划",
+      "evidence_record": "AUTO-1939"
+    },
+    {
+      "risk_code": "风险-000103",
+      "order_code": "销售-001921",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1921"
+    },
+    {
+      "risk_code": "风险-000104",
+      "order_code": "销售-001802",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1802"
+    },
+    {
+      "risk_code": "风险-000105",
+      "order_code": "销售-001756",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1756"
+    },
+    {
+      "risk_code": "风险-000106",
+      "order_code": "销售-001818",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1818"
+    },
+    {
+      "risk_code": "风险-000107",
+      "order_code": "销售-001997",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1997"
+    },
+    {
+      "risk_code": "风险-000108",
+      "order_code": "销售-001777",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1777"
+    },
+    {
+      "risk_code": "风险-000109",
+      "order_code": "销售-001800",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1800"
+    },
+    {
+      "risk_code": "风险-000110",
+      "order_code": "销售-001996",
+      "rule_code": "QUALITY_REWORK",
+      "expected_score": 15,
+      "expected_severity": "中",
+      "expected_cause": "质量返工影响计划",
+      "evidence_record": "AUTO-1996"
+    },
+    {
+      "risk_code": "风险-000111",
+      "order_code": "销售-001866",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1866"
+    },
+    {
+      "risk_code": "风险-000112",
+      "order_code": "销售-001936",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1936"
+    },
+    {
+      "risk_code": "风险-000113",
+      "order_code": "销售-001832",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1832"
+    },
+    {
+      "risk_code": "风险-000114",
+      "order_code": "销售-001968",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1968"
+    },
+    {
+      "risk_code": "风险-000115",
+      "order_code": "销售-001947",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1947"
+    },
+    {
+      "risk_code": "风险-000116",
+      "order_code": "销售-001879",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1879"
+    },
+    {
+      "risk_code": "风险-000117",
+      "order_code": "销售-001875",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1875"
+    },
+    {
+      "risk_code": "风险-000118",
+      "order_code": "销售-001995",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1995"
+    },
+    {
+      "risk_code": "风险-000119",
+      "order_code": "销售-001721",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1721"
+    },
+    {
+      "risk_code": "风险-000120",
+      "order_code": "销售-001691",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1691"
+    },
+    {
+      "risk_code": "风险-000121",
+      "order_code": "销售-001991",
+      "rule_code": "MATERIAL_SHORTAGE",
+      "expected_score": 40,
+      "expected_severity": "高",
+      "expected_cause": "存在关键物料缺口",
+      "evidence_record": "AUTO-1991"
+    },
+    {
+      "risk_code": "风险-000122",
+      "order_code": "销售-001774",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1774"
+    },
+    {
+      "risk_code": "风险-000123",
+      "order_code": "销售-001858",
+      "rule_code": "PURCHASE_LATE",
+      "expected_score": 25,
+      "expected_severity": "中",
+      "expected_cause": "关联采购订单预计迟到",
+      "evidence_record": "AUTO-1858"
+    }
+  ]
+}

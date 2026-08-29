@@ -1,0 +1,92 @@
+workflow:
+  name: 制造业多步骤决策分析
+  version: stage7-v1
+  application_type: chatflow_branch
+  entry_intent: multi_step_decision
+
+inputs:
+  query: string
+  as_of_date: string
+  role: string
+  trace_id: string
+  conversation_context: string
+
+models:
+  router:
+    provider: tongyi
+    name: qwen-plus-2025-07-28
+    temperature: 0
+    max_tokens: 1200
+  synthesizer:
+    provider: tongyi
+    name: qwen-max
+    temperature: 0.1
+    max_tokens: 4000
+
+intents:
+  - order_risk_decision
+  - procurement_decision
+  - production_recovery
+  - cost_scenario
+  - supplier_replacement
+  - unknown
+
+entities:
+  order_code: string_or_null
+  purchase_order_code: string_or_null
+  material_code: string_or_null
+  supplier_code: string_or_null
+  quantity: number_or_null
+  need_by_date: string_or_null
+  change_rate: number_or_null
+  decision_goal: string_or_null
+
+branches:
+  order_risk_decision:
+    required: [order_code]
+    tools:
+      - get_order_risk
+      - get_order_fulfillment
+      - get_purchase_delays
+      - get_production_progress
+      - get_order_cost
+  procurement_decision:
+    required_any: [order_code, purchase_order_code, material_code, supplier_code]
+    tools:
+      - get_purchase_delays
+      - get_material_shortages
+  production_recovery:
+    required: [order_code]
+    tools:
+      - get_production_progress
+      - get_order_fulfillment
+      - get_purchase_delays
+  cost_scenario:
+    required: [change_rate]
+    tools:
+      - run_procurement_scenario
+      - get_order_cost
+  supplier_replacement:
+    required: [material_code, quantity, need_by_date]
+    tools:
+      - recommend_suppliers
+      - get_material_shortages
+
+output:
+  format: json
+  schema:
+    answer: string
+    intent: string
+    entities: object
+    executive_summary: string
+    evidence_chain: array
+    options: array
+    recommendation: object
+    metrics: array
+    risks: array
+    next_actions: array
+    source_refs: array
+    warnings: array
+    suggested_questions: array
+    visualization: string_or_null
+

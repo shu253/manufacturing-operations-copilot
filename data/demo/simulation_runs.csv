@@ -1,0 +1,2 @@
+﻿simulation_run_id,simulation_code,simulation_type,created_at,created_by,parameter_json,status
+1,测算-铜价上涨8%,物料价格变化,2026-08-05T10:00:00+08:00,1,"{""material_code"": ""物料-0001"", ""change_rate"": 0.08}",已完成

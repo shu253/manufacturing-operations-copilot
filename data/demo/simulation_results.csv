@@ -1,0 +1,2 @@
+﻿simulation_result_id,simulation_run_id,sales_order_id,sales_order_code,original_cost,new_cost,cost_increase,original_margin_rate,new_margin_rate,margin_change,recommendation
+1,1,2000,销售-20260718-01,828873.93,848426.42,19552.49,0.165,0.1453,-0.0197,优先与现有供应商议价，并评估备选供应商交付稳定性

@@ -1,0 +1,211 @@
+openapi: 3.0.3
+info:
+  title: 华东某精工受控业务工具
+  version: 1.0.1
+  description: 所有工具只访问FastAPI白名单业务能力，不接受SQL、数据库路径或任意URL。
+servers:
+  - url: https://YOUR-TUNNEL.example.com
+security:
+  - bearerAuth: []
+paths:
+  /api/v1/ai-tools/get_dashboard_summary:
+    post:
+      operationId: get_dashboard_summary
+      summary: 查询经营驾驶舱摘要
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/get_order_overview:
+    post:
+      operationId: get_order_overview
+      summary: 查询指定销售订单概况，parameters需要order_code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/get_order_risk:
+    post:
+      operationId: get_order_risk
+      summary: 计算指定订单风险，parameters需要order_code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/get_order_fulfillment:
+    post:
+      operationId: get_order_fulfillment
+      summary: 分析指定订单物料齐套，parameters需要order_code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/get_material_shortages:
+    post:
+      operationId: get_material_shortages
+      summary: 查询缺料，可传order_code或material_code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/get_purchase_delays:
+    post:
+      operationId: get_purchase_delays
+      summary: 查询采购交付和迟交，可传销售订单order_code、采购订单purchase_order_code、material_code或supplier_code；若order_code中传入采购编号也会自动识别
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/get_production_progress:
+    post:
+      operationId: get_production_progress
+      summary: 分析生产进度，parameters需要order_code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/get_supplier_profile:
+    post:
+      operationId: get_supplier_profile
+      summary: 查询供应商画像，parameters需要supplier_code，可传period
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/recommend_suppliers:
+    post:
+      operationId: recommend_suppliers
+      summary: 推荐替代供应商，parameters需要material_code、quantity、need_by_date
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/get_order_cost:
+    post:
+      operationId: get_order_cost
+      summary: 查询订单完整成本，parameters需要order_code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/calculate_quote:
+    post:
+      operationId: calculate_quote
+      summary: 计算报价，parameters需要product_code、quantity，可传target_margin和options
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/run_procurement_scenario:
+    post:
+      operationId: run_procurement_scenario
+      summary: 运行采购情景，parameters需要scenario_type和parameters
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/get_receivables:
+    post:
+      operationId: get_receivables
+      summary: 查询应收与回款风险，可传customer_code和order_code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/generate_business_report:
+    post:
+      operationId: generate_business_report
+      summary: 生成经营报告确定性数据，parameters可传daily、weekly或monthly
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+  /api/v1/ai-tools/search_enterprise_policy:
+    post:
+      operationId: search_enterprise_policy
+      summary: 查询企业演示制度，parameters需要query
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {type: object, required: [trace_id, as_of_date, parameters], properties: {trace_id: {type: string}, as_of_date: {type: string, format: date}, parameters: {type: object, additionalProperties: true}}}
+      responses: {'200': {$ref: '#/components/responses/ToolResponse'}}
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+  requestBodies:
+    ToolRequest:
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ToolRequest'
+  responses:
+    ToolResponse:
+      description: 受控工具结果
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ToolResponse'
+  schemas:
+    ToolRequest:
+      type: object
+      required: [trace_id, as_of_date, parameters]
+      properties:
+        trace_id:
+          type: string
+          description: FastAPI为本轮问答生成的追踪编号，必须原样传递
+        as_of_date:
+          type: string
+          format: date
+        parameters:
+          type: object
+          additionalProperties: true
+    ToolResponse:
+      type: object
+      properties:
+        success: {type: boolean}
+        tool_name: {type: string}
+        data: {type: object, additionalProperties: true}
+        meta:
+          type: object
+          properties:
+            as_of_date: {type: string}
+            formula_version: {type: string, nullable: true}
+            calculation_id: {type: string, nullable: true}
+            sources:
+              type: array
+              items: {type: object, additionalProperties: true}
+            warnings:
+              type: array
+              items: {type: string}

@@ -1,0 +1,8 @@
+fastapi==0.128.8
+httpx==0.28.1
+lark-oapi==1.6.7
+openpyxl==3.1.5
+pdfplumber==0.11.9
+pydantic==2.8.2
+reportlab==4.4.9
+uvicorn==0.39.0

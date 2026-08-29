@@ -1,0 +1,5 @@
+﻿warehouse_id,plant_id,warehouse_code,warehouse_name,warehouse_type
+1,1,仓库-苏州-原料,苏州原材料库,原材料
+2,1,仓库-苏州-成品,苏州成品库,成品
+3,2,仓库-嘉兴-原料,嘉兴原材料库,原材料
+4,2,仓库-嘉兴-成品,嘉兴成品库,成品

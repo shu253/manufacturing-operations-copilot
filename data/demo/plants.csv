@@ -1,0 +1,3 @@
+﻿plant_id,company_id,plant_code,plant_name,city,is_active
+1,1,工厂-苏州,苏州装配基地,苏州市,1
+2,1,工厂-嘉兴,嘉兴制造基地,嘉兴市,1

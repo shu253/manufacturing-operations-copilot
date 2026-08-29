@@ -1,0 +1,2 @@
+"""External messaging channel adapters."""
+
